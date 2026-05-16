@@ -24,7 +24,7 @@ find_package(Qt6 REQUIRED COMPONENTS Core Gui Qml Quick Widgets)
 #  Definicion de los ejecutables de qt6                       |
 #=============================================================|
 add_executable(Dj-Shell
-    main.cpp
+    src/main.cpp
 )
 
 #=============================================================|
@@ -41,9 +41,10 @@ target_link_libraries(Dj-Shell PRIVATE
 #==============================================================|
 #  Copia auto del main en la carpeta para ejecutar sin copilar |
 #==============================================================|
-configure_file(main.qml main.qml COPYONLY)
+target_compile_definitions(Dj-Shell PRIVATE
+    QML_SRC_DIR="${CMAKE_CURRENT_SOURCE_DIR}/qml"
 
-
+)
 
 
 

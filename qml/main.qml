@@ -22,7 +22,7 @@ Window {
 
         Text {
             anchors.centerIn: parent
-            text: " DJ-Shell | Ciclo 2: wayland Panel"
+            text: " DJ-Shell | Ciclo 3: Organizacion de Software | +variables globales +qml +cpp +cmake"
             color: "#cdd6f4"
             font.pixelSize: 12
             font.bold: true
