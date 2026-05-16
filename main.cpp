@@ -3,6 +3,8 @@
 
 int main(int argc, char *argv[])
 {
+    qputenv("QT_QPA_PLATAFORM", "Wayland;xcb");
+    
     QGuiApplication app(argc, argv);
 
     QQmlApplicationEngine engine;

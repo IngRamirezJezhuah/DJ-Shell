@@ -1,28 +1,30 @@
 import QtQuick 
 
 Window {
-    width: 640
-    height: 480
+    id: panel
+    width: 1920
+    height: 50
     visible: true
-    title: "DJ-Shell -ciclo 1"
-    color: "#1e1e2e"
+    title: "DJ-Shell-panel"
+    flags: Qt.FramelessWindowHint | Qt.WindowStaysOnTopHint | Qt.Window
+    color: "transparent"
 
-    
+    //Barra de tareas con qml
     Rectangle {
+        //margenes de qml con la heredacion de anchors para que se adapte a cualquier resolucion
+        anchors.fill: parent 
+        anchors.margins: 4
         
-        anchors.centerIn: parent
-        width: 320
-        height: 120
-        color: "#313244"
-        radius: 12
-        border.color: "#cba6f7"
-        border.width: 2
+        color: "#c51e1e2e"
+        radius: 10
+        border.color: "#45495a"
+        border.width: 1
 
         Text {
             anchors.centerIn: parent
-            text: "! DJ-Shell esta vivo !"
+            text: " DJ-Shell | Ciclo 2: wayland Panel"
             color: "#cdd6f4"
-            font.pixelSize: 16
+            font.pixelSize: 12
             font.bold: true
         }
     }
