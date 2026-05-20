@@ -1,17 +1,16 @@
 #include <QGuiApplication>
-#include <QQmlApplicationEngine>
 #include <QCoreApplication>
 #include <QUrl>
 #include <QString>
 
-int main(int argc, char *argv[])
-{
+int main(int argc, char *argv[]){
     //Fuerza el uso de wayland de a huevo
     qputenv("QT_QPA_PLATAFORM", "Wayland;xcb");
-    
+
     QGuiApplication app(argc, argv);
 
     QQmlApplicationEngine engine;
+    
 
     //Ruta global que apunta al doc
     QString qmlPath = QStringLiteral(QML_SRC_DIR) + "/main.qml";
