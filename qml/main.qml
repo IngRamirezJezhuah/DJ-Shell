@@ -53,7 +53,10 @@ Window {
                 Clock {
                     id: clockRoot
                 }
-
+                /*
+                Workspace {
+                        id: workspace
+                    }*/
                 /*
                 Column {
                     id: clock 
@@ -89,6 +92,7 @@ Window {
                     id: workspaceBar
                     spacing: 12
                     
+                    
                     Text { text: "barra workspace"; color: "#dfdfdf"; font.pixelSize: 18 }
                     Text { text: "一"; color: "#f38ba8"; font.pixelSize: 16; font.bold: true }
                     Text { text: "二"; color: "#6c7086"; font.pixelSize: 16 }
@@ -98,7 +102,7 @@ Window {
                 }
                     Rectangle {
                         
-                        color: "transparent"
+                        color: "#6c7086"
                         
                     
                 }

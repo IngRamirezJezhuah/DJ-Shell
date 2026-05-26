@@ -1,5 +1,6 @@
 #include <QGuiApplication>
 #include <QCoreApplication>
+#include <QQmlApplicationEngine>
 #include <QUrl>
 #include <QString>
 
@@ -10,7 +11,7 @@ int main(int argc, char *argv[]){
     QGuiApplication app(argc, argv);
 
     QQmlApplicationEngine engine;
-    
+    const QUrl url(QStringLiteral("main.qml"));
 
     //Ruta global que apunta al doc
     QString qmlPath = QStringLiteral(QML_SRC_DIR) + "/main.qml";

@@ -77,7 +77,7 @@ Item {
                 if (batteryRoot.isCharging) return "󰂄" ; 
                 // 󰂃 0 ,󰁺 1 , 󰁻 2, 󰁼 3, 󰁽 4,󰁾 5 ,󰁿 6,󰂀 7, 󰂁 8, 󰂂 9, 󱈏 10 healt, 󰂄cahrgin
                 var icons = [
-                    {limit: 100, icon: "󱈏 " },
+                    {limit: 100, icon: "󰂄" },
                     {limit: 90, icon: "󰂂" },
                     {limit: 80, icon: "󰂁" },
                     {limit: 70, icon: "󰂀" },

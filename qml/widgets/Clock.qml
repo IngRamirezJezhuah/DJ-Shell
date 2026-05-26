@@ -1,3 +1,7 @@
+/*
+    Este es el widget del reloj para que no se me olvide el uso que le podamos dar
+    para que no se me pierda y recuerde el acomodo de las ventanas 
+*/
 import QtQuick
 
 Item {
